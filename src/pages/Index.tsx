@@ -54,21 +54,21 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm">
+    <div className="min-h-screen bg-background text-foreground dark:bg-[#121212]">
+      <header className="bg-secondary/10 dark:bg-secondary/20 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center">
           <img 
             src="https://cdn.prod.website-files.com/67e2dccd1ec24c6d87343b35/67e2de0abb4f936ad7c24364_HL%20Logo%20Slug.png" 
             alt="Client Logo" 
             className="h-12 mr-auto"
           />
-          <h1 className="text-xl md:text-2xl font-bold text-gray-800">Proposal Generator</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100">Proposal Generator</h1>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6">
+          <TabsList className="grid w-full grid-cols-2 mb-6 bg-secondary/10 dark:bg-secondary/20">
             <TabsTrigger value="form">Create Proposal</TabsTrigger>
             <TabsTrigger value="results">Results</TabsTrigger>
           </TabsList>
@@ -93,3 +93,4 @@ const Index = () => {
 };
 
 export default Index;
+
