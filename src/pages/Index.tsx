@@ -17,8 +17,8 @@ const Index = () => {
     setIsSubmitting(true);
     try {
       // Use the mock service for now, switch to real service when ready
-      // const response = await submitProposal(data);
-      const response = await mockSubmitProposal(data);
+      const response = await submitProposal(data);
+      // const response = await mockSubmitProposal(data);
       
       // Combine the form data with the response
       const savedProposal: SavedProposal = {
