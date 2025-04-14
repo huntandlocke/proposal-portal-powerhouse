@@ -58,7 +58,7 @@ const Index = () => {
       <header className="bg-[#0C1320]/90 shadow-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-4 flex items-center">
           <img 
-            src="/lovable-uploads/f0b01a18-9625-4134-a8ed-789709333451.png" 
+            src="/lovable-uploads/575d8419-b9b8-4dcb-bee6-57f5482bbcda.png" 
             alt="Hunt & Locke Logo" 
             className="h-12 mr-auto"
           />
