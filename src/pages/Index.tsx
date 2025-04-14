@@ -54,23 +54,27 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground dark:bg-[#121212]">
-      <header className="bg-secondary/10 dark:bg-secondary/20 shadow-sm">
+    <div className="min-h-screen bg-[#0C1320] text-white">
+      <header className="bg-[#0C1320]/90 shadow-sm border-b border-white/10">
         <div className="container mx-auto px-4 py-4 flex items-center">
           <img 
-            src="https://cdn.prod.website-files.com/67e2dccd1ec24c6d87343b35/67e2de0abb4f936ad7c24364_HL%20Logo%20Slug.png" 
-            alt="Client Logo" 
+            src="/lovable-uploads/f0b01a18-9625-4134-a8ed-789709333451.png" 
+            alt="Hunt & Locke Logo" 
             className="h-12 mr-auto"
           />
-          <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100">Proposal Generator</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-white/90">Proposal Generator</h1>
         </div>
       </header>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6 bg-secondary/10 dark:bg-secondary/20">
-            <TabsTrigger value="form">Create Proposal</TabsTrigger>
-            <TabsTrigger value="results">Results</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 mb-6 bg-[#0C1320]/50 border border-white/10">
+            <TabsTrigger value="form" className="text-white/80 hover:text-white data-[state=active]:bg-[#1A2433] data-[state=active]:text-white">
+              Create Proposal
+            </TabsTrigger>
+            <TabsTrigger value="results" className="text-white/80 hover:text-white data-[state=active]:bg-[#1A2433] data-[state=active]:text-white">
+              Results
+            </TabsTrigger>
           </TabsList>
           
           <TabsContent value="form" className="space-y-4">
@@ -93,4 +97,3 @@ const Index = () => {
 };
 
 export default Index;
-
