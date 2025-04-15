@@ -1,7 +1,7 @@
 
 import { ProposalData, ProposalResponse } from "@/types/proposal";
 
-const WEBHOOK_URL = "https://hook.us2.make.com/y51llgocujro54rs3x8e20ojl0ijkqsf";
+const WEBHOOK_URL = "https://hook.us2.make.com/1zmv3r43e1q6ofu6fhvfuj01vv1xlfxw";
 
 export async function submitProposal(data: ProposalData): Promise<ProposalResponse> {
   try {
